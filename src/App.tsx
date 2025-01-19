@@ -732,7 +732,7 @@ const App = () => {
               <div className="relative group">
                 <div className="relative rounded-full">
                   <img
-                    src="/public/myphoto.jpeg"
+                    src="/public/myphoto.png"
                     alt="Profile"
                     className="rounded-full w-96 h-96"
                   />
