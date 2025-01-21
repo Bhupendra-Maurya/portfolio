@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 interface FormData {
@@ -24,7 +24,7 @@ const Contact = () => {
     description: ''
   });
 
-  const [formStatus, setFormStatus] = React.useState<FormStatus>({
+  const [formStatus, setFormStatus] = useState<FormStatus>({
     loading: false,
     success: false,
     error: false
