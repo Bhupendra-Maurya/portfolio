@@ -11,6 +11,16 @@ interface Project {
 const Projects = () => {
   const projects: Project[] = [
     {
+      title: "HomePro – HomeCare Hub",
+      description:
+        "HomePro is a responsive and visually appealing  website built using HTML, CSS, and JavaScript. The website provides an elegant interface to showcase services, testimonials, and other essential details.",
+      image:
+        "image.png",
+      technologies: ["HTML", "CSS", "JavaScript","Figma"],
+      liveLink: "https://bhupendra-maurya.github.io/homePro/",
+      githubLink: "https://github.com/Bhupendra-Maurya/homePro",
+    },
+    {
       title: "E-Commerce Platform",
       description:
         "Developed a static e-commerce website with a responsive and accessible user experience. Designed a clean, visually appealing layout adhering to modern design principles.",
