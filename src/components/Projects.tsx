@@ -33,8 +33,8 @@ const Projects = () => {
     "Tailwind CSS",
     "Vite"
   ],
-  "liveLink": "https://bhupendra-maurya.github.io/Binance/",
-  "githubLink": "https://github.com/Bhupendra-Maurya/Binance"
+  "liveLink": "https://bhupendra-maurya.github.io/binance/",
+  "githubLink": "https://github.com/Bhupendra-Maurya/binance"
 },
     {
       title: "Envelope Budgeting App",
