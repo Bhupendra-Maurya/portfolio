@@ -1,4 +1,3 @@
-
 interface Project {
   title: string;
   description: string;
@@ -11,12 +10,55 @@ interface Project {
 const Projects = () => {
   const projects: Project[] = [
     {
+      title: "CineScope - Movie Search App",
+      description:
+        "React-based movie search application powered by the OMDb API. Users can search for movies, browse posters, and view detailed movie information including plot, cast, and ratings in a sleek UI.",
+      image: "cinescope.png",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "OMDb API",
+        "Lucide Icons",
+      ],
+      liveLink: "https://bhupendra-maurya.github.io/CineScope/",
+      githubLink: "https://github.com/Bhupendra-Maurya/CineScope",
+    },
+    {
+  "title": "Binance - Frontend Clone",
+  "description": "A responsive frontend clone of the Binance cryptocurrency exchange, designed to replicate its complex UI and trading view. Features a component-based architecture, mock market data display, and a fully responsive layout for all devices.",
+  "image": "binance.png",
+  "technologies": [
+    "React",
+    "Tailwind CSS",
+    "Vite"
+  ],
+  "liveLink": "https://bhupendra-maurya.github.io/Binance/",
+  "githubLink": "https://github.com/Bhupendra-Maurya/Binance"
+},
+    {
+      title: "Envelope Budgeting App",
+      description:
+        "A full-stack MERN application designed for personal finance management using the envelope budgeting system. It enables users to allocate income into various spending categories (envelopes), track expenses, and maintain a clear overview of their budget.",
+      image: "budgetApp.png",
+      technologies: [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Mongoose",
+        "Axios",
+        "CSS",
+      ],
+      liveLink: "https://github.com/Bhupendra-Maurya/envelope-budget-app",
+      githubLink: "https://github.com/Bhupendra-Maurya/envelope-budget-app",
+    },
+    {
       title: "HomePro – HomeCare Hub",
       description:
         "HomePro is a responsive and visually appealing  website built using HTML, CSS, and JavaScript. The website provides an elegant interface to showcase services, testimonials, and other essential details.",
-      image:
-        "image.png",
-      technologies: ["HTML", "CSS", "JavaScript","Figma"],
+      image: "homepro.png",
+      technologies: ["HTML", "CSS", "JavaScript", "Figma"],
       liveLink: "https://bhupendra-maurya.github.io/homePro/",
       githubLink: "https://github.com/Bhupendra-Maurya/homePro",
     },
@@ -111,9 +153,9 @@ const Projects = () => {
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors group/link"
+                    className="inline-flex items-center text-gray-700 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors group/link"
                   >
-                    View Project
+                    Live Link
                     <svg
                       className="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform"
                       fill="none"
