@@ -21,20 +21,20 @@ const Projects = () => {
         "OMDb API",
         "Lucide Icons",
       ],
-      liveLink: "https://bhupendra-maurya.github.io/CineScope/",
+      liveLink: "https://cine-scope-six.vercel.app/",
       githubLink: "https://github.com/Bhupendra-Maurya/CineScope",
     },
     {
-  "title": "Binance - Frontend Clone",
-  "description": "A responsive frontend clone of the Binance cryptocurrency exchange, designed to replicate its complex UI and trading view. Features a component-based architecture, mock market data display, and a fully responsive layout for all devices.",
+  "title": "CryptCurr - Binance Frontend Clone",
+  "description": "A  frontend clone of the Binance cryptocurrency exchange, designed to replicate its complex UI and trading view. Features a component-based architecture,market data display.",
   "image": "binance.png",
   "technologies": [
     "React",
     "Tailwind CSS",
     "Vite"
   ],
-  "liveLink": "https://bhupendra-maurya.github.io/binance/",
-  "githubLink": "https://github.com/Bhupendra-Maurya/binance"
+  "liveLink": "https://crypt-curr.vercel.app/",
+  "githubLink": "https://github.com/Bhupendra-Maurya/cryptCurr"
 },
     {
       title: "Envelope Budgeting App",
@@ -50,8 +50,8 @@ const Projects = () => {
         "Axios",
         "CSS",
       ],
-      liveLink: "https://github.com/Bhupendra-Maurya/envelope-budget-app",
-      githubLink: "https://github.com/Bhupendra-Maurya/envelope-budget-app",
+      liveLink: "https://github.com/Bhupendra-Maurya/budget-app",
+      githubLink: "https://github.com/Bhupendra-Maurya/budget-app",
     },
     {
       title: "HomePro – HomeCare Hub",
@@ -59,21 +59,21 @@ const Projects = () => {
         "HomePro is a responsive and visually appealing  website built using HTML, CSS, and JavaScript. The website provides an elegant interface to showcase services, testimonials, and other essential details.",
       image: "homepro.png",
       technologies: ["HTML", "CSS", "JavaScript", "Figma"],
-      liveLink: "https://bhupendra-maurya.github.io/homePro/",
+      liveLink: "https://home-pro-topaz.vercel.app/",
       githubLink: "https://github.com/Bhupendra-Maurya/homePro",
     },
     {
-      title: "E-Commerce Platform",
+      title: "ShopNow - E-Commerce Platform",
       description:
         "Developed a static e-commerce website with a responsive and accessible user experience. Designed a clean, visually appealing layout adhering to modern design principles.",
       image:
         "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80",
       technologies: ["HTML", "CSS", "JavaScript"],
-      liveLink: "https://bhupendra-maurya.github.io/Myntra/",
-      githubLink: "https://github.com/Bhupendra-Maurya/Myntra",
+      liveLink: "https://shop-now-blond.vercel.app/",
+      githubLink: "https://github.com/Bhupendra-Maurya/shopNow",
     },
     {
-      title: "Task Management App",
+      title: "Task Manager",
       description:
         "Developed a feature-rich task management application that enables users to add, filter, complete, and delete tasks, with statistics to track task statuses. React Context API for centralized state management.",
 
@@ -81,9 +81,9 @@ const Projects = () => {
         "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?auto=format&fit=crop&w=800&q=80",
       technologies: ["React", "TypeScript", "Jest", "RTL"],
       liveLink:
-        "https://github.com/Bhupendra-Maurya/Task-Management-Application",
+        "https://github.com/Bhupendra-Maurya/Task-Manager",
       githubLink:
-        "https://github.com/Bhupendra-Maurya/Task-Management-Application",
+        "https://github.com/Bhupendra-Maurya/Task-Manager",
     },
     {
       title: "Admin Dashboard",
@@ -155,7 +155,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center text-gray-700 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors group/link"
                   >
-                    Live Link
+                     Live Demo
                     <svg
                       className="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform"
                       fill="none"
