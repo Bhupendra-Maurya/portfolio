@@ -18,8 +18,7 @@ const Projects = () => {
         "React",
         "React Flow",
         "JavaScript",
-        "HTML5 Drag & Drop",
-        "CSS-in-JS",
+        "html/css"
       ],
       liveLink: "https://chatbot-flow-builder-three-alpha.vercel.app/", 
       githubLink: "https://github.com/Bhupendra-Maurya/chatbot-flow-builder", 
