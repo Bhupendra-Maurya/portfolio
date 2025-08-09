@@ -10,6 +10,21 @@ interface Project {
 const Projects = () => {
   const projects: Project[] = [
     {
+      title: "Chatbot Flow Builder",
+      description:
+        "Built a sophisticated drag-and-drop visual flow builder application using React and React Flow. Features real-time node editing, intelligent connection validation, and comprehensive flow validation. Implemented professional-grade component architecture with production-ready code documentation and modular design patterns.",
+      image:"chatbot-flow-builder.png",
+      technologies: [
+        "React",
+        "React Flow",
+        "JavaScript",
+        "HTML5 Drag & Drop",
+        "CSS-in-JS",
+      ],
+      liveLink: "https://chatbot-flow-builder-three-alpha.vercel.app/", 
+      githubLink: "https://github.com/Bhupendra-Maurya/chatbot-flow-builder", 
+    },
+    {
       title: "CineScope - Movie Search App",
       description:
         "React-based movie search application powered by the OMDb API. Users can search for movies, browse posters, and view detailed movie information including plot, cast, and ratings in a sleek UI.",
@@ -25,17 +40,14 @@ const Projects = () => {
       githubLink: "https://github.com/Bhupendra-Maurya/CineScope",
     },
     {
-  "title": "CryptCurr - Binance Frontend Clone",
-  "description": "A  frontend clone of the Binance cryptocurrency exchange, designed to replicate its complex UI and trading view. Features a component-based architecture,market data display.",
-  "image": "binance.png",
-  "technologies": [
-    "React",
-    "Tailwind CSS",
-    "Vite"
-  ],
-  "liveLink": "https://crypt-curr.vercel.app/",
-  "githubLink": "https://github.com/Bhupendra-Maurya/cryptCurr"
-},
+      title: "CryptCurr - Binance Frontend Clone",
+      description:
+        "A  frontend clone of the Binance cryptocurrency exchange, designed to replicate its complex UI and trading view. Features a component-based architecture,market data display.",
+      image: "binance.png",
+      technologies: ["React", "Tailwind CSS", "Vite"],
+      liveLink: "https://crypt-curr.vercel.app/",
+      githubLink: "https://github.com/Bhupendra-Maurya/cryptCurr",
+    },
     {
       title: "Envelope Budgeting App",
       description:
@@ -80,10 +92,8 @@ const Projects = () => {
       image:
         "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?auto=format&fit=crop&w=800&q=80",
       technologies: ["React", "TypeScript", "Jest", "RTL"],
-      liveLink:
-        "https://github.com/Bhupendra-Maurya/Task-Manager",
-      githubLink:
-        "https://github.com/Bhupendra-Maurya/Task-Manager",
+      liveLink: "https://github.com/Bhupendra-Maurya/Task-Manager",
+      githubLink: "https://github.com/Bhupendra-Maurya/Task-Manager",
     },
     {
       title: "Admin Dashboard",
@@ -155,7 +165,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center text-gray-700 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors group/link"
                   >
-                     Live Demo
+                    Live Demo
                     <svg
                       className="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 transition-transform"
                       fill="none"
