@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import emailjs from '@emailjs/browser';
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 interface FormData {
   name: string;
@@ -17,17 +17,17 @@ interface FormStatus {
 
 const Contact = () => {
   const [formData, setFormData] = useState<FormData>({
-    name: '',
-    email: '',
-    phone: '',
-    purpose: '',
-    description: ''
+    name: "",
+    email: "",
+    phone: "",
+    purpose: "",
+    description: "",
   });
 
   const [formStatus, setFormStatus] = useState<FormStatus>({
     loading: false,
     success: false,
-    error: false
+    error: false,
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -36,22 +36,28 @@ const Contact = () => {
 
     try {
       await emailjs.send(
-        'service_ix6u4zq',
-        'template_to210jr',
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: formData.name,
           from_email: formData.email,
           phone: formData.phone,
           purpose: formData.purpose,
           message: formData.description,
-          to_name: 'Bhupendra',
+          to_name: "Bhupendra",
         },
-        'tAj-V_vIxmUaCPgPh'
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
       setFormStatus({ loading: false, success: true, error: false });
-      setFormData({ name: '', email: '', phone: '', purpose: '', description: '' });
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        purpose: "",
+        description: "",
+      });
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
       setFormStatus({ loading: false, success: false, error: true });
     }
