@@ -39,15 +39,6 @@ const Projects = () => {
       githubLink: "https://github.com/Bhupendra-Maurya/CineScope",
     },
     {
-      title: "CryptCurr - Binance Frontend Clone",
-      description:
-        "A  frontend clone of the Binance cryptocurrency exchange, designed to replicate its complex UI and trading view. Features a component-based architecture,market data display.",
-      image: "binance.png",
-      technologies: ["React", "Tailwind CSS", "Vite"],
-      liveLink: "https://crypt-curr.vercel.app/",
-      githubLink: "https://github.com/Bhupendra-Maurya/cryptCurr",
-    },
-    {
       title: "Envelope Budgeting App",
       description:
         "A full-stack MERN application designed for personal finance management using the envelope budgeting system. It enables users to allocate income into various spending categories (envelopes), track expenses, and maintain a clear overview of their budget.",
