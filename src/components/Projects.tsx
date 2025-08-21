@@ -13,15 +13,10 @@ const Projects = () => {
       title: "Chatbot Flow Builder",
       description:
         "Built a sophisticated drag-and-drop visual flow builder application using React and React Flow. Features real-time node editing, intelligent connection validation, and comprehensive flow validation. Implemented professional-grade component architecture with production-ready code documentation and modular design patterns.",
-      image:"chatbot-flow-builder.png",
-      technologies: [
-        "React",
-        "React Flow",
-        "JavaScript",
-        "html/css"
-      ],
-      liveLink: "https://chatbot-flow-builder-three-alpha.vercel.app/", 
-      githubLink: "https://github.com/Bhupendra-Maurya/chatbot-flow-builder", 
+      image: "chatbot-flow-builder.png",
+      technologies: ["React", "React Flow", "JavaScript", "html/css"],
+      liveLink: "https://chatbot-flow-builder-three-alpha.vercel.app/",
+      githubLink: "https://github.com/Bhupendra-Maurya/chatbot-flow-builder",
     },
     {
       title: "CineScope - Movie Search App",
@@ -37,6 +32,21 @@ const Projects = () => {
       ],
       liveLink: "https://cine-scope-six.vercel.app/",
       githubLink: "https://github.com/Bhupendra-Maurya/CineScope",
+    },
+    {
+      title: "WorldEx - Trading Platform",
+      description:
+        "Developed a Binance-inspired cryptocurrency trading platform using React, Vite, and Tailwind CSS. Features include a dynamic hero section,  coin listings, news updates, and a modern, responsive UI.",
+      image: "worldex.png",
+      technologies: [
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "TypeScript",
+        "Lucide-React",
+      ],
+      liveLink: "https://world-ex-zeta.vercel.app/",
+      githubLink: "https://github.com/Bhupendra-Maurya/worldEx",
     },
     {
       title: "Envelope Budgeting App",
@@ -71,7 +81,7 @@ const Projects = () => {
       image:
         "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80",
       technologies: ["HTML", "CSS", "JavaScript"],
-      liveLink: "https://shop-now-blond.vercel.app/",
+      liveLink: "https://shop-now-drab.vercel.app/",
       githubLink: "https://github.com/Bhupendra-Maurya/shopNow",
     },
     {
