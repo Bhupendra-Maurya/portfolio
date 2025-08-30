@@ -19,6 +19,22 @@ const Projects = () => {
       githubLink: "https://github.com/Bhupendra-Maurya/chatbot-flow-builder",
     },
     {
+      title: "Prodify - Product Dashboard",
+      description:
+        "Built a comprehensive product management dashboard using React, TypeScript, and modern web technologies. Features full CRUD operations, real-time search and filtering, responsive design, and optimistic updates. Implemented with TanStack Query for efficient state management, shadcn/ui for polished components, and mobile-first responsive design patterns.",
+      image: "prodify.png",
+      technologies: [
+        "React",
+        "TypeScript",
+        "TailwindCSS",
+        "shadcn/ui",
+        "TanStack Query",
+        "Axios",
+      ],
+      liveLink: "https://prodify-neon.vercel.app/",
+      githubLink: "https://github.com/Bhupendra-Maurya/Prodify",
+    },
+    {
       title: "CineScope - Movie Search App",
       description:
         "React-based movie search application powered by the OMDb API. Users can search for movies, browse posters, and view detailed movie information including plot, cast, and ratings in a sleek UI.",
