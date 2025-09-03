@@ -19,6 +19,22 @@ const Projects = () => {
       githubLink: "https://github.com/Bhupendra-Maurya/chatbot-flow-builder",
     },
     {
+      title: "Calendar Journal - Infinite Scroll Cal.",
+      description:
+        "Built an infinite-scrolling calendar application with journal entries, search functionality, and keyboard navigation. Features continuous date flow without empty cells, real-time search filtering, modal navigation, and responsive design. Implemented with React hooks for infinite scroll, optimized performance with memoization and caching, and mobile-first responsive design with clean minimal styling.",
+      image: "calendar.png",
+      technologies: [
+        "React",
+        "TypeScript",
+        "CSS3",
+        "React Hooks",
+        "Intersection Observer",
+        "Performance Optimization",
+      ],
+      liveLink: "https://calendar-application-two.vercel.app/",
+      githubLink: "https://github.com/Bhupendra-Maurya/calendarApplication",
+    },
+    {
       title: "Prodify - Product Dashboard",
       description:
         "Built a comprehensive product management dashboard using React, TypeScript, and modern web technologies. Features full CRUD operations, real-time search and filtering, responsive design, and optimistic updates. Implemented with TanStack Query for efficient state management, shadcn/ui for polished components, and mobile-first responsive design patterns.",
