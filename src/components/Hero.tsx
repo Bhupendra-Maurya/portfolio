@@ -1,7 +1,9 @@
-
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-16">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center pt-16"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-6xl sm:text-8xl font-bold mb-8">
           <span className="bg-gradient-to-r from-blue-600 to-green-800 bg-clip-text text-transparent">
@@ -11,7 +13,7 @@ const Hero = () => {
 
         <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-12">
           <strong>Software Engineer</strong> <br />
-          Full Stack Developer, Cloud, & AI/ML Enthusiast
+          Full Stack Developer, Cloud & AI/ML Enthusiast
         </p>
 
         <div className="flex justify-center space-x-6 mb-12">
@@ -70,6 +72,19 @@ const Hero = () => {
             <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
               <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
             </svg>
+          </a>
+          <a
+            href="https://bhupendra-resume.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+            aria-label="Resume"
+          >
+            <img
+              src="./curriculum-vitae.png"
+              alt="Resume/CV"
+              className="w-8 h-8"
+            />
           </a>
         </div>
       </div>
