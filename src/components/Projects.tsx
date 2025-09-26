@@ -10,6 +10,19 @@ interface Project {
 const Projects = () => {
   const projects: Project[] = [
     {
+      title: "FireSale ERP",
+      description:
+        "Developed a comprehensive ERP solution with 9+ modules, including CRM, Inventory, Sales, and AI-powered Insights. Built a responsive, theme-able UI with Shadcn components and Tailwind CSS, ensuring a consistent experience across devices.",
+                // Integrated Google's Genkit to create an AI agent that provides automated business summaries, opportunities, and recommendations based on user-provided data.",
+
+      image: "firesale-erp.png",
+      technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Shadcn UI"],
+      liveLink: "https://fire-sale-erp.vercel.app/",
+      githubLink: "https://github.com/Bhupendra-Maurya/FireSale-ERP",
+
+    }
+    ,
+    {
       title: "Chatbot Flow Builder",
       description:
         "Built a sophisticated drag-and-drop visual flow builder application using React and React Flow. Features real-time node editing, intelligent connection validation, and comprehensive flow validation. Implemented professional-grade component architecture with production-ready code documentation and modular design patterns.",
