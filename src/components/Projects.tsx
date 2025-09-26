@@ -44,15 +44,6 @@ const Projects = () => {
       githubLink: "https://github.com/Bhupendra-Maurya/FlowWise",
     },
     {
-      title: "Chatbot Flow Builder",
-      description:
-        "Built a sophisticated drag-and-drop visual flow builder application using React and React Flow. Features real-time node editing, intelligent connection validation, and comprehensive flow validation. Implemented professional-grade component architecture with production-ready code documentation and modular design patterns.",
-      image: "chatbot-flow-builder.png",
-      technologies: ["React", "React Flow", "JavaScript", "html/css"],
-      liveLink: "https://chatbot-flow-builder-three-alpha.vercel.app/",
-      githubLink: "https://github.com/Bhupendra-Maurya/chatbot-flow-builder",
-    },
-    {
       title: "Calendar Journal",
       description:
         "Built an infinite-scrolling calendar application with journal entries, search functionality, and keyboard navigation. Features continuous date flow without empty cells, real-time search filtering, modal navigation, and responsive design. Implemented with React hooks for infinite scroll, optimized performance with memoization and caching, and mobile-first responsive design with clean minimal styling.",
@@ -76,6 +67,15 @@ const Projects = () => {
       ],
       liveLink: "https://prodify-neon.vercel.app/",
       githubLink: "https://github.com/Bhupendra-Maurya/Prodify",
+    },
+    {
+      title: "Chatbot Flow Builder",
+      description:
+        "Built a sophisticated drag-and-drop visual flow builder application using React and React Flow. Features real-time node editing, intelligent connection validation, and comprehensive flow validation. Implemented professional-grade component architecture with production-ready code documentation and modular design patterns.",
+      image: "chatbot-flow-builder.png",
+      technologies: ["React", "React Flow", "JavaScript", "html/css"],
+      liveLink: "https://chatbot-flow-builder-three-alpha.vercel.app/",
+      githubLink: "https://github.com/Bhupendra-Maurya/chatbot-flow-builder",
     },
     {
       title: "CineScope - Movie Search App",
