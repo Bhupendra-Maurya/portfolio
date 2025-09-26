@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import Projects from './components/Projects';
-import Hero from './components/Hero';
-import About from './components/About';
-import Skills from './components/Skills';
-import Services from './components/Services';
-import Contact from './components/Contact';
+import Projects from "./components/Projects";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Services from "./components/Services";
+import Contact from "./components/Contact";
+import Experience from "./components/Experience";
 
 const App = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -24,54 +25,98 @@ const App = () => {
   };
 
   return (
-    <div className="bg-gray-50 dark:bg-gray-900">
+    <div className="relative bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 min-h-screen overflow-x-hidden">
+      {/* Animated SVG Pattern */}
+      <div aria-hidden="true" className="fixed inset-0 z-0 pointer-events-none">
+        <svg
+          className="w-full h-full animate-[bgmove_30s_linear_infinite]"
+          width="100%"
+          height="100%"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style={{ opacity: 0.1 }}
+        >
+          <defs>
+            <pattern
+              id="grid"
+              width="40"
+              height="40"
+              patternUnits="userSpaceOnUse"
+            >
+              <path d="M40 0V40H0" stroke="#38bdf8" strokeWidth="0.5" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#grid)" />
+        </svg>
+      </div>
+
+      {/* Optional: Subtle Noise Overlay */}
+      <div
+        aria-hidden="true"
+        className="fixed inset-0 z-0 pointer-events-none"
+        style={{
+          backgroundImage:
+            "url('https://www.transparenttextures.com/patterns/noise.png')",
+          opacity: 0.07,
+          mixBlendMode: "overlay",
+        }}
+      />
+
       {/* Navigation */}
       <nav
-        className={`fixed w-full z-50 transition-all duration-300 ${
+        className={`w-full z-40 transition-all duration-300 ${
           scrolled
-            ? "bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg"
-            : ""
+            ? "bg-gradient-to-r from-gray-900/90 via-gray-800/90 to-gray-900/90 backdrop-blur-2xl shadow-2xl border-b border-gray-800"
+            : "bg-transparent"
         }`}
+        role="navigation"
+        aria-label="Main Navigation"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-green-600 bg-clip-text text-transparent">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
+          <div className="flex justify-between items-center h-20">
+            {/* Logo */}
+            <span className="text-3xl font-extrabold tracking-tight bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent drop-shadow-lg select-none">
               BM
             </span>
+
+            {/* Desktop menu */}
+            <div className="hidden md:flex items-center space-x-10">
+              <NavLink href="#home">Home</NavLink>
+              <NavLink href="#about">About</NavLink>
+              <NavLink href="#experience">Experience</NavLink>
+              <NavLink href="#skills">Skills</NavLink>
+              <NavLink href="#projects">Projects</NavLink>
+              <NavLink href="#services">Services</NavLink>
+              <NavLink href="#contact">Contact</NavLink>
+            </div>
 
             {/* Mobile menu button */}
             <button
               onClick={toggleMenu}
-              className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white focus:outline-none"
-              aria-expanded="false"
+              className="md:hidden flex  items-center justify-center p-3 rounded-full bg-gray-800/70 hover:bg-gray-700/80 text-cyan-400 shadow-lg transition"
+              aria-expanded={isMenuOpen}
+              aria-label={isMenuOpen ? "Close main menu" : "Open main menu"}
             >
-              <span className="sr-only">Open main menu</span>
-              {/* Icon when menu is closed */}
               {!isMenuOpen ? (
                 <svg
-                  className="block h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-7 w-7"
                   fill="none"
-                  viewBox="0 0 24 24"
                   stroke="currentColor"
-                  aria-hidden="true"
+                  viewBox="0 0 24 24"
                 >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
+                    d="M4 7h16M4 12h16M4 17h16"
                   />
                 </svg>
               ) : (
-                /* Icon when menu is open */
                 <svg
-                  className="block h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-7 w-7"
                   fill="none"
-                  viewBox="0 0 24 24"
                   stroke="currentColor"
-                  aria-hidden="true"
+                  viewBox="0 0 24 24"
                 >
                   <path
                     strokeLinecap="round"
@@ -82,41 +127,51 @@ const App = () => {
                 </svg>
               )}
             </button>
-
-            {/* Desktop menu */}
-            <div className="hidden md:flex items-center space-x-8">
-              <NavLink href="#home">Home</NavLink>
-              <NavLink href="#about">About</NavLink>
-              <NavLink href="#services">Services</NavLink>
-              <NavLink href="#projects">Projects</NavLink>
-              <NavLink href="#skills">Skills</NavLink>
-              <NavLink href="#contact">Contact</NavLink>
-            </div>
           </div>
 
-          {/* Mobile menu, show/hide based on menu state */}
+          {/* Mobile menu */}
           <div
-            className={`${
-              isMenuOpen ? "block" : "hidden"
-            } md:hidden transition-all duration-300 ease-in-out`}
+            className={`overflow-hidden transition-all duration-500 ease-in-out ${
+              isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+            } md:hidden`}
+            style={{ transitionProperty: "max-height, opacity" }}
           >
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-900 rounded-md shadow-lg">
+            <div className="px-4 pt-4 pb-6 space-y-2 bg-gradient-to-br from-gray-900/95 to-gray-800/90 rounded-2xl shadow-2xl border border-gray-800 mt-2">
               <MobileNavLink href="#home" onClick={() => setIsMenuOpen(false)}>
                 Home
               </MobileNavLink>
               <MobileNavLink href="#about" onClick={() => setIsMenuOpen(false)}>
                 About
               </MobileNavLink>
-              <MobileNavLink href="#services" onClick={() => setIsMenuOpen(false)}>
-                Services
+              <MobileNavLink
+                href="#experience"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Experience
               </MobileNavLink>
-              <MobileNavLink href="#projects" onClick={() => setIsMenuOpen(false)}>
-                Projects
-              </MobileNavLink>
-              <MobileNavLink href="#skills" onClick={() => setIsMenuOpen(false)}>
+              <MobileNavLink
+                href="#skills"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Skills
               </MobileNavLink>
-              <MobileNavLink href="#contact" onClick={() => setIsMenuOpen(false)}>
+              <MobileNavLink
+                href="#projects"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Projects
+              </MobileNavLink>
+
+              <MobileNavLink
+                href="#services"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Services
+              </MobileNavLink>
+              <MobileNavLink
+                href="#contact"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Contact
               </MobileNavLink>
             </div>
@@ -125,12 +180,13 @@ const App = () => {
       </nav>
 
       {/* Main Content */}
-      <main>
+      <main className="relative z-10">
         <Hero />
         <About />
-        <Services />
-        <Projects />
+        <Experience />
         <Skills />
+        <Projects />
+        <Services />
         <Contact />
       </main>
     </div>
@@ -146,8 +202,9 @@ const NavLink = ({
 }) => (
   <a
     href={href}
-    className="text-gray-800 p-2 hover:bg-gray-100 rounded-md dark:text-gray-300 dark:hover:text-primary transition-colors"
+    className="relative px-4 py-2 text-lg font-medium text-gray-200 hover:text-cyan-400 transition group"
   >
+    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 transition-all group-hover:w-full"></span>
     {children}
   </a>
 );
@@ -164,7 +221,7 @@ const MobileNavLink = ({
   <a
     href={href}
     onClick={onClick}
-    className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-white transition-colors"
+    className="block px-4 py-3 rounded-xl text-lg font-semibold text-gray-200 hover:text-cyan-400 hover:bg-gray-800/80 transition"
   >
     {children}
   </a>
