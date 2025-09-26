@@ -27,6 +27,23 @@ const Projects = () => {
       githubLink: "https://github.com/Bhupendra-Maurya/FireSale-ERP",
     },
     {
+      title: "FlowWise - Visual Workflow Builder",
+      description:
+        "A full-stack visual workflow application featuring a dynamic drag-and-drop interface built with React and React Flow. The frontend is powered by Vite, styled with Tailwind CSS, and uses Zustand for state management. The backend is a high-performance API built with Python and FastAPI, served by Uvicorn. The application allows users to create, connect, and manage nodes in a workflow canvas.",
+      image: "flowWise.png",
+      technologies: [
+        "React",
+        "Vite",
+        "Python",
+        "FastAPI",
+        "React Flow",
+        "Tailwind CSS",
+        "Zustand",
+      ],
+      liveLink: "https://drive.google.com/file/d/1lbjAWj7aiMKpY38BbZQTKYdETHtflZKR/view?usp=sharing",
+      githubLink: "https://github.com/Bhupendra-Maurya/FlowWise",
+    },
+    {
       title: "Chatbot Flow Builder",
       description:
         "Built a sophisticated drag-and-drop visual flow builder application using React and React Flow. Features real-time node editing, intelligent connection validation, and comprehensive flow validation. Implemented professional-grade component architecture with production-ready code documentation and modular design patterns.",
