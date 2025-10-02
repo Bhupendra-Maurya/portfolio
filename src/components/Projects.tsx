@@ -27,6 +27,21 @@ const Projects = () => {
       githubLink: "https://github.com/Bhupendra-Maurya/FireSale-ERP",
     },
     {
+  title: "ResuMaster: Drag-and-Drop Resume Builder",
+  description: "Engineered a dynamic, WYSIWYG resume builder with a drag-and-drop interface for effortless section and item reordering. Implemented in-place text editing and dynamic section management (add/remove/customize) to provide a seamless user experience. Leveraged browser local storage for persistent state management and developed a one-click, print-ready PDF export feature.",
+  image: "resumaster.png",
+  technologies: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Shadcn UI",
+    "Lucide React"
+  ],
+  liveLink: "https://resu-master-two.vercel.app/",
+  githubLink: "https://github.com/Bhupendra-Maurya/ResuMaster"
+},
+    {
       title: "FlowWise - Visual Workflow Builder",
       description:
         "A full-stack visual workflow application featuring a dynamic drag-and-drop interface built with React and React Flow. The frontend is powered by Vite, styled with Tailwind CSS, and uses Zustand for state management. The backend is a high-performance API built with Python and FastAPI, served by Uvicorn. The application allows users to create, connect, and manage nodes in a workflow canvas.",
